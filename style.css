@@ -1,0 +1,67 @@
+body{
+    color: #fff;
+    background-color: black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: aqua;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+form{
+    width: 500px;
+    margin: 0 auto;
+
+}
+label{
+    text-align: left;
+}
+
+input{
+    width: 100%;
+}
+
+#name{
+    border: 3px solid rgba(24, 119, 182, 0.918);
+}
+
+#email{
+    border: 3px solid green;
+}
+
+#age{
+    border: 3px solid orange;
+}
